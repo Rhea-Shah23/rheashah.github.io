@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Rhea Shah's Website | CS/AI Experience </title>
+        <link rel= "stylesheet" href="stylesheet.css">
+        <style>
+            :root {
+                --dark-purple: #27173a;
+                --medium-purple: #4a2a6e;
+                --light-purple: #8c5cb6;
+                --off-white: #f0e6f6;
+            }
+            body {
+                font-family: 'Poppins', sans-serif;
+                background-color: var(--dark-purple);
+                color: var(--off-white);
+                line-height: 1.6;
+                margin: 0;
+                padding: 0;
+            }
+            .container {
+                max-width: 1200px;
+                margin: 0 auto;
+                padding: 0 20px;
+            }
+            h1, h2, h3 {
+                color: var(--light-purple);
+            }
+            h1 {
+                font-size: 2.5em;
+                text-align: center;
+                margin-bottom: 30px;
+            }
+            h2 {
+                font-size: 1.8em;
+                border-bottom: 2px solid var(--light-purple);
+                padding-bottom: 10px;
+                margin-top: 40px;
+            }
+            h3 {
+                font-size: 1.4em;
+                margin-top: 20px;
+            }
+            .navbar {
+                display: flex;
+                justify-content: center;
+                padding: 10px 0;
+            }
+            :root {
+                --dark-purple: #27173a;
+                --medium-purple: #4a2a6e;
+                --light-purple: #8c5cb6;
+                --off-white: #f0e6f6;
+            }
+
+            header {
+                background-color: var(--medium-purple);
+                padding: 20px 0;
+                box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+            }
+            
+            .navbar {
+                display: flex;
+                justify-content: center;
+                padding: 10px 0;
+            }
+            .nav-list {
+                list-style-type: none;
+                padding: 0;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            .nav-list li {
+                margin: 5px 10px;
+            }
+            .nav-list a {
+                color: var(--off-white);
+                text-decoration: none;
+                padding: 5px 10px;
+                border-radius: 5px;
+                transition: all 0.3s ease;
+            }
+            .nav-list a:hover {
+                background-color: var(--light-purple);
+                color: var(--dark-purple);
+            }
+
+            .exp-section {
+                background-color: rgba(74, 42, 110, 0.3);
+                margin-bottom: 30px;
+                padding: 30px;
+                border-radius: 15px;
+                box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            }
+            .education-grid {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 30px;
+            }
+            @media (max-width: 768px) {
+                .education-grid {
+                    grid-template-columns: 1fr;
+                }
+            }
+            ul {
+                padding-left: 20px;
+                margin-top: 0;
+            }
+            li {
+                margin-bottom: 10px;
+            }
+            .language-list li, .coursework-list li {
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-start;
+                flex-wrap: wrap;
+            }
+            .language-list span, .coursework-list span {
+                font-weight: bold;
+                margin-right: 10px;
+                min-width: 100px;
+            }
+            a {
+                color: var(--light-purple);
+                text-decoration: none;
+                transition: color 0.3s ease;
+            }
+            a:hover {
+                color: var(--off-white);
+            }
+            footer {
+                text-align: center;
+                padding: 20px 0;
+                background-color: var(--medium-purple);
+                margin-top: 40px;
+            }
+        </style>
+    </head>
+    <body>
+            <nav class="navbar">
+                <ul class="nav-list">
+                    <li><a href="main.html">Home</a></li>
+                    <li><a href="experience.html">CS/AI Experience</a></li>
+                    <li><a href="research.html">Research</a></li>
+                    <li><a href="3dprinting.html">3D Printing</a></li>
+                </ul>
+            </nav>
+    
+        <main class="container">
+            <h1>CS/AI Experience</h1>
+            <p>This page showcases my journey and expertise in Computer Science and Artificial Intelligence.</p>
+    
+            <section class="exp-section">
+                <h2>Education</h2>
+                <p>This section highlights my formal education relating to programming, CS, and AI.</p>
+    
+                <div class="education-grid">
+                    <div>
+                        <h3>Languages</h3>
+                        <ul class="language-list">
+                            <li>Python: Proficient - PyTorch, TensorFlow, NumPy, MatPlotLib, Pandas, Seaborn, Sklearn, Scrapy</li>
+                            <li>Java: Intermediate - Scanner, Vector, Math</li>
+                            <li>R: Intermediate - dplyr, tidyr, stringr, ggplot2, Shiny</li>
+                            <li>JavaScript: Beginner</li>
+                            <li>HTML/CSS: Expert</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3>Notable Coursework</h3>
+                        <ul class="coursework-list">
+                            <li>Computer Science Inquiries (2022): Python, HTML/CSS</li>
+                            <li>Object Oriented Programming (2023): Java</li>
+                            <li>Discrete Mathematics (2023): Algorithmic Thinking</li>
+                            <li>CS Seminar: Machine Learning (2024): Python, Anaconda</li>
+                            <li>CS Seminar: Android App Development (2024): Java, Android Studio</li>
+                            <li>Web Technologies (2024): HTML/CSS, JavaScript, PHP, MySQL</li>
+                            <li>Code Avengers - Python 1-3 (2018): Python</li>
+                            <li>Code Avengers - HTML/CSS 1-3 (2018): HTML/CSS</li>
+                            <li>Code Avengers - JavaScript 1 & 2 (2018): JavaScript</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+    
+            <section class="exp-section">
+                <h2>Projects</h2>
+                <p>I quickly realized that learning how to program and understanding CS concepts was not enough; I needed to practice using them in real-life situations. I focused on using projects to strengthen my Python skills, with some projects in Java. These projects have provided me with invaluable experience in implementing my knowledge in real-life scenarios. Along with projects, conducting research has taught me how to work with real-life data. To learn more about my research experience, click <a href="research.html">here</a>.</p>
+    
+                <h3>Example CS Projects</h3>
+                <ul>
+                    <li>2048 Game</li>
+                    <li>Calculator</li>
+                    <li>Number Guessing Game</li>
+                    <li>Hangman Game</li>
+                    <li>Racing Game</li>
+                    <li>Rock, Paper, Scissors, Shoot Game</li>
+                    <li>Chatbot</li>
+                </ul>
+            </section>
+        </main>
+    </body>
+    </html>
+</html>

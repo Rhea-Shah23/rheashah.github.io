@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rhea Shah's Website | 3D Printing Journey</title>
+    <style>
+:root {
+            --dark-purple: #27173a;
+            --medium-purple: #4a2a6e;
+            --light-purple: #8c5cb6;
+            --off-white: #f0e6f6;
+        }
+        body {
+            font-family: "Roboto", sans-serif;
+            font-weight: 400;
+            background-color: #27173a;
+            color: white;
+            margin: 0;
+            padding-top: 60px; /* Add padding to account for fixed navbar */
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        h1 {
+            text-align: center;
+            color: #b388ff;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 20px 0;
+        }
+        .gallery-item {
+            background-color: #3c1361;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        .gallery-item:hover {
+            transform: translateY(-5px);
+        }
+        .gallery-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+        .gallery-item .caption {
+            padding: 15px;
+        }
+        .gallery-item h3 {
+            margin: 0 0 10px;
+            color: #d1c4e9;
+        }
+        .gallery-item p {
+            margin: 0;
+            font-size: 0.9em;
+        }
+        .navbar {
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+            background-color: var(--dark-purple);
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+        .nav-list {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin: 0;
+        }
+        .nav-list li {
+            margin: 5px 10px;
+        }
+        .nav-list a {
+            color: var(--off-white);
+            text-decoration: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+            transition: all 0.3s ease;
+        }
+        .nav-list a:hover {
+            background-color: var(--light-purple);
+            color: var(--dark-purple);
+        }
+        p {
+            text-align: center;
+            margin-right: 15%;
+            margin-left: 15%;
+        }
+    </style>
+</head>
+<body>
+    <nav class = "navbar">
+        <ul class = "nav-list">
+            <li><a href = "main.html">Home</a></li>
+            <li><a href = "experience.html">CS/AI Experience</a></li>
+            <li><a href = "research.html">Research</a></li>
+            <li><a href = "3dprinting.html">3D Printing</a></li>
+        </ul>
+    </nav>
+    <h1> My 3D Printing Journey </h1>
+    <p> During the pandemic, healthcare workers were struggling to gain access to personal protective equipment (PPE), so I started handmaking face shields and donating them to local hospitals. To automate the process, I invested in a 3D printer and continued donating face shields. Then, I started selling PPE at a low and affordable price. 3D printing grabbed my attention, and I couldn't stop printing. Below is a gallery of some of my favorite prints, enjoy! </p>
+    <div class="container">
+        <h2>Gallery</h2>
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="faceshields.jpg" alt="Faceshields">
+                <div class="caption">
+                    <h3>Faceshields</h3>
+                    <p>This was one of the first things I've ever printed!  </p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="maskfitter.jpg" alt="MaskFitters">
+                <div class="caption">
+                    <h3>MaskFitters</h3>
+                    <p>Here's another example of a PPE item. This object is contoured to your face and goes over a surgical mask to provide a tighter fit (equivalent to a N95 and no more foggy glasses!). </p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="earsavers.jpg" alt="Ear Savers">
+                <div class="caption">
+                    <h3>Ear Savers</h3>
+                    <p>After wearing a mask for hours, my ears hurt and started turning red! This device takes the pressure off of our ears by shifting the elastic down to your neck and having the tension on the device (hence the name ear savers). We made a special "HERO" edition to gift to friends, family, and your HERO!</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="momscafe.jpg" alt="Mom's Cafe">
+                <div class="caption">
+                    <h3>Mom's Cafe Sign (Mother's Day Gift)</h3>
+                    <p>My mom loves to cook! Every weekend she sends me new recipes, excited to try them. My dad and I worked together to make this sign. All of the letters you see are 3D printed and the base is wood. Happy Mother's Day Mom!</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="kriyayoga.jpg" alt="Kriya Yoga Sign">
+                <div class="caption">
+                    <h3>Kriya Yoga Sign</h3>
+                    <p>My local meditation center, Kriya Yoga, was looking for a sign to identify a residential house where guests can live when visiting. My father and I volunteered, and we 3D printed this sign and used wood as our base. They loved it!</p>
+                </div>
+            </div>
+            <div class="gallery-item">
+                <img src="airpods.jpeg" alt="Airpods Case">
+                <div class="caption">
+                    <h3>Airpods Case</h3>
+                    <p>My sister is very clumsy with her Airpods, and we hate whenever they drop and they scatter all over the floor. I designed this minimalistic colorful case to protect our Airpods!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
